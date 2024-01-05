@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         function checkLeapYear(year){
+            const leap =new Date(year,1,29).getDate()===29;
+            if(leap){
+                console.log(year+'is leap year');
+            }
+            else{
+                console.log(year+'is not leap year');
+            }
+         }
+         const year = prompt('enter the year');
+         checkLeapYear(year);
+    </script>
+</body>
+</html>
