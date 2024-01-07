@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const number =parseInt(prompt("enter the positive integer"));
+
+        //negative number
+        if(number<0){
+            console.log("factorial for negative number does not exit");
+        }
+        //0 number
+        else if(number===0){
+            console.log("factorial for ${number}  number 1");
+        }
+        //positive number
+        else{
+            let fact=1;
+            for(i=1; i<=number; i++){
+                fact *=i;
+            }
+console.log(`factorial of number ${number} is ${fact}`);
+        }
+    </script>
+</body>
+</html>
