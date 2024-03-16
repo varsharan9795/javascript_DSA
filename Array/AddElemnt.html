@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function addElement(arr){
+        //     arr.unshift(4);
+        //     console.log(arr);
+
+        // }
+        // const array=[1,2,3];
+        // addElement(array);
+
+
+        // function addElement(arr){
+        //     arr.splice(0,0,4);
+        //     console.log(arr);
+        // }
+        // const array=[1,2,3];
+        // addElement(array);
+
+
+//using spread
+function addElement(arr){
+    arr=[4,...arr];
+    console.log(arr);
+}
+const array=[1,2,3];
+addElement(array);
+    </script>
+</body>
+</html>

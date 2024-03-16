@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+    //     function getUniqueAfterMerge(arr1,arr2)
+    //     {
+
+      
+    //   let arr = arr1.concat(arr2);
+    //   let uniqueArr = [];
+    //   for (let i of arr) {
+    //     if (uniqueArr.indexOf(i) === -1) {
+    //       uniqueArr.push(i);
+    //     }
+    //   }
+    //   console.log(uniqueArr);
+    // }
+    // const array1=[1,2,3,4,4,5,8,9];
+    // const array2=[2,3,5];
+
+    // getUniqueAfterMerge(array1, array2);
+
+
+
+
+    function getUniqueAfterMerge(arr1,arr2){
+        let arr=[...arr1,...arr2];
+
+        let uniqueArr=[...new Set(arr)]
+        console.log(uniqueArr);
+
+      
+    }
+    const array1=[1,2,3];
+        const array2=[2,3,5];
+        getUniqueAfterMerge(array1, array2);
+    </script>
+  </body>
+</html>
