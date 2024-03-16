@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Program to check if string start s and end g 
+        function CheckString(str){
+          if(str.startsWith('S') && str.endsWith('G')){
+            console.log('the string starts with s and end g')
+          }  
+          else if(str.startsWith('S'))
+          {
+            console.log('the string starts with s but not end g')
+          }
+          else if(str.endsWith('G'))
+          {
+            console.log('the string does not  starts S but  end G')
+          }
+          else{
+            console.log('the string  not  starts S but not  end G')
+          }
+        }
+        let string=prompt('Enter the string')
+        CheckString(string);
+    </script>
+</body>
+</html>
